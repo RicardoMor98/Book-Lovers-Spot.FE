@@ -1,0 +1,90 @@
+.login-icon {
+    color: #0b4c77;
+    margin-bottom: 0.5rem;
+    padding-left:2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right:0.5rem;
+}
+
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment */
+    background-color: #96ccf1;
+   
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center; /* Ensures vertical alignment */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding-right:1rem;
+   
+}
+
+.logout-btn {
+    height: 30px; /* Ensures a consistent height with nav links */
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, #228dd4, #0f5082); /* Initial gradient */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out; /* Smooth transition */
+}
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #0b4c77, #228dd4, #4cc9f0); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+
+.inner-div{
+    display: flex;
+    flex-direction: row;
+}
+.logout-btn:hover {
+    background: linear-gradient(to right, #1a75bb, #0d4f91); /* Darker gradient on hover */
+}
+
+
+a:link {
+    color: #0b4c77;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    align-items: center; /* Aligns links vertically */
+    height: 40px; /* Matches the logout button */
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px; /* Adjust the distance of the bar from the text */
+    width: 0;
+    height: 2px; /* Thickness of the bar */
+    background-color: #228dd4; /* Same color as the text */
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%; /* Expands the bar under the link on hover */
+}
+
+
+
+
