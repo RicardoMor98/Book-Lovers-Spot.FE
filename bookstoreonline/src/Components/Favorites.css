@@ -1,0 +1,64 @@
+.favorites-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.favorites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorites-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.favorites-item:hover {
+    transform: scale(1.02);
+}
+
+.favorites-item h3 {
+    margin: 0 0 10px;
+    color: #007bff;
+}
+
+.favorites-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.no-favorites {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+.unfavorite-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.unfavorite-btn:hover {
+    background-color: #cc0000;
+}

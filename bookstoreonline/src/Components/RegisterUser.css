@@ -1,0 +1,157 @@
+/* Modern color scheme and styling */
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-header h2 {
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+}
+
+.form-header p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    font-size: 0.85rem;
+}
+
+.book-icon {
+    color: #3498db;
+    width: 24px;
+    height: 24px;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+select.form-control {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 0.85rem;
+    padding-right: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-container {
+        padding: 15px;
+    }
+
+    .form-wrapper {
+        padding: 1.25rem;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 10px;
+    }
+
+    .form-wrapper {
+        padding: 1rem;
+        border-radius: 12px;
+        max-width: 300px;
+    }
+
+    .form-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-header p {
+        font-size: 0.8rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.6rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .form-control {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .submit-btn {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+}
