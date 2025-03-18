@@ -1,45 +1,48 @@
-/* Footer Container */
+/* Footer Styles */
 .footer {
     background-color: #111;
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
 /* Footer Content Wrapper */
 .footer-container {
-    width:full;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 /* Footer Sections */
 .footer-section {
     flex: 1;
     min-width: 250px;
-    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 /* Brand / Logo */
 .footer-brand h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #4db8ff;
+    margin-bottom: 10px;
 }
 
 .footer-brand p {
     color: #aaa;
-    margin-top: 0.5rem;
+    font-size: 1rem;
+    max-width: 300px;
+    margin: auto;
 }
 
-/* Navigation Links */
+/* Quick Links */
 .footer-links h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #4db8ff;
-    
+    margin-bottom: 10px;
 }
 
 .footer-links ul {
@@ -54,28 +57,31 @@
 .footer-links a {
     color: #bbb;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-
+.footer-links a:hover {
+    color: #4db8ff;
+}
 
 /* Social Media */
 .footer-social h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #4db8ff;
+    margin-bottom: 10px;
 }
 
 .footer-social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 0.5rem;
 }
 
 .footer-social-icons a {
     color: #bbb;
     font-size: 1.8rem;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s;
 }
 
 .footer-social-icons a:hover {
@@ -85,8 +91,21 @@
 /* Copyright */
 .footer-bottom {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid #333;
     color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
 }

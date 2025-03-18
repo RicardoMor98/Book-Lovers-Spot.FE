@@ -43,6 +43,7 @@
 }
 .logo-text {
     font-size: 25px;
+    margin-top: 10px;
     font-weight: bold;
     background: linear-gradient(45deg, #0b4c77, #228dd4, #4cc9f0); /* Gradient colors */
     -webkit-background-clip: text;
@@ -60,14 +61,19 @@
 }
 
 
-a:link {
-    color: #0b4c77;
+a:link, 
+a:visited {
+    color: #0b4c77; /* Ensure visited links remain the same color */
     text-decoration: none;
     font-size: 15px;
     position: relative;
     display: flex;
     align-items: center; /* Aligns links vertically */
     height: 40px; /* Matches the logout button */
+}
+
+a:active {
+    color: #0b4c77 !important; /* Prevents the red flash when clicking */
 }
 
 a::after {

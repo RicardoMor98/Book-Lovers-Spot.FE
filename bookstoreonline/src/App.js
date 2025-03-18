@@ -9,12 +9,15 @@ import ViewReadings from './Components/ViewReadings';
 import RegisterUser from './Components/RegisterUser';
 import ReadingDetail from './Components/ReadingDetail';
 import Favorites from './Components/Favorites';
+import LandingPage from './Components/LandingPage';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<LoginUser />} />
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/login" element={<LoginUser />} />
                 <Route path="/author-dashboard" element={<AuthorDashboard />} />
                 <Route path="/addnewreading" element={<PublishReading />} />
                 <Route path="/reader-dashboard" element={<ReaderDashboard />} />

@@ -18,7 +18,7 @@ const LoginUser = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`https://8000-ricardomor9-bookloverss-ipld6p1s217.ws-us118.gitpod.io/api/authenticate-user/`, formData, {
+            const response = await axios.post(`${API_BASE_URL}/api/authenticate-user/`, formData, {
                 headers: {
                     "Content-Type": "application/json"
                 },

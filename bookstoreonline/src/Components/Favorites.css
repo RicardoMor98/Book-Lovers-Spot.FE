@@ -2,14 +2,18 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(to right, #5baae6, #0d4f91);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px; /* Prevents layout shift */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .favorites-title {
     text-align: center;
-    color: #333;
+    color: #f8f8f8;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -17,6 +21,7 @@
 .favorites-list {
     list-style-type: none;
     padding: 0;
+    width: 100%;
 }
 
 .favorites-item {
@@ -44,9 +49,10 @@
 
 .no-favorites {
     text-align: center;
-    color: #888;
+    color: #f0e8e8;
     font-style: italic;
 }
+
 .unfavorite-btn {
     background-color: #ff4d4d;
     color: white;
@@ -61,4 +67,27 @@
 
 .unfavorite-btn:hover {
     background-color: #cc0000;
+}
+
+/* Spinner container */
+/* Make the loading container take up the full space inside .favorites-container */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Takes full width */
+    height: 100%; /* Takes full height of parent */
+    min-height: 200px; /* Prevents collapsing */
+}
+
+/* Spinner icon */
+.loading-icon {
+    font-size: 3rem;
+    color: #ffffff; /* Make spinner visible */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

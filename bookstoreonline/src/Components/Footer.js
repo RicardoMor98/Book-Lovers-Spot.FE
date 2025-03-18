@@ -5,14 +5,16 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section">
-          <h2 className="footer-logo">MyWebsite</h2>
-          <p className="footer-text">Building the future, one step at a time.</p>
+        {/* Brand Section */}
+        <div className="footer-section footer-brand">
+          <h2>BookSpot</h2>
+          <p>Your go-to platform for discovering and sharing amazing books.</p>
         </div>
 
-        <div className="footer-section">
-          <h3 className="footer-heading">Quick Links</h3>
-          <ul className="footer-links">
+        {/* Quick Links */}
+        <div className="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -20,9 +22,10 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="footer-section">
-          <h3 className="footer-heading">Follow Us</h3>
-          <div className="footer-icons">
+        {/* Social Media */}
+        <div className="footer-section footer-social">
+          <h3>Follow Us</h3>
+          <div className="footer-social-icons">
             <a href="#"><FaFacebook /></a>
             <a href="#"><FaTwitter /></a>
             <a href="#"><FaInstagram /></a>
@@ -31,6 +34,7 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Copyright Section */}
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} BookSpot. All rights reserved.</p>
       </div>

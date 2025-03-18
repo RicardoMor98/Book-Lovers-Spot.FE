@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { BookOpen } from 'lucide-react';
+import { useLocation } from "react-router-dom";
 import './PublishReading.css';
 import axios from "axios";
 import API_BASE_URL from "../config";
 import Header from './Header';
+import Footer from './Footer';
 
 const links = [
     { label: 'Published Readings', href: '/readings' },
     { label: 'Add New', href: '/addnewreading' },
     { label: 'Profile', href: '/authors' }
 ];
+
 
 
 const PublishReading = () => {
@@ -55,8 +58,15 @@ const PublishReading = () => {
         }
     };
     
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]); 
     
     return (
+
+        
 
         <div>
             <Header navLinks={links} />
@@ -103,6 +113,7 @@ const PublishReading = () => {
                 </form>
             </div>
         </div>
+        <Footer />
         </div>
     );
 };
